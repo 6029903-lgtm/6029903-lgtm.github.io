@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background: #f05eb8;
-  color: #e92681;
+  background: #92c2f8;
+  color: #80c0f5;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -39,12 +39,12 @@ body {
 }
 
 #interests li {
-  color: #faa4c5;
+  color: #fff3ad;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
-  background: #ff91f0;
-  border: 1px solid #ff3db5;
+  background: #ccffd3;
+  border: 1px solid #6ddff3;
   border-radius: 100px;
   transition:
     background 0.25s ease,
@@ -56,22 +56,24 @@ body {
 #interests li:hover {
   background: #e9bfd0;
   color: #fff;
-  border-color: #ee7dd5;
+  border-color: #7af1f5;
   transform: translateY(-2px);
-}#interests h3 {
-  color: #dd1a3b;
+}
+#interests h3 {
+  color: #37ffff;
 }
 
 #interests li {
   background: #ffe8ec;
   border-color: #ffa6b5;
-  color: #ff57a5;
+  color: #e89df1;
 }
 
 #interests li:hover {
-  background: #e21235;
-  color: #f57deb;
-}h2 {
+  background: #ac67e6;
+  color: #f7e791;
+}
+h2 {
   margin: 0;
   font-size: clamp(4rem, 10vw, 7rem);
   line-height: 0.9;
@@ -88,14 +90,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   line-height: 1.4;
-}.sidebar-img {
+}
+.sidebar-img {
   width: 100%;
   max-width: 300px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
   border-radius: 16px;
- 
+
   box-shadow: 0 8px 30px rgba(176, 219, 255, 0.993);
   transition:
     filter 0.4s ease,
@@ -104,31 +107,13 @@ body {
 }
 
 .sidebar-img:hover {
- 
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
-}#interests {
+}
+#interests {
   margin-top: 32px;
   width: 100%;
 }
-
-
-Paste the copied URL into the src attribute of your <img> tag, replacing CHANGE_ME.
-Example:
-<div class="sidebar">
-  <img class="sidebar-img" src="https://example.com/image.jpg" alt="My image">
-</div>
-
-
-✅ Check Your Work!
-Preview your site using Live Server.
-You should see your image, but it's probably way too big and overflows the sidebar. Don't worry — CSS will fix that next!
-Phase 2: Add the CSS (Black & White Filter)
-Let's tame that image and give it a curated, editorial look — like a photo in a magazine.
-
-🔍 Open your style.css file
-
-Add the following CSS rule at the bottom of the file:
 
 .sidebar-img {
   width: 100%;
@@ -137,7 +122,7 @@ Add the following CSS rule at the bottom of the file:
   object-fit: cover;
   display: block;
   border-radius: 16px;
-  
+
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transition:
     filter 0.4s ease,
@@ -146,7 +131,6 @@ Add the following CSS rule at the bottom of the file:
 }
 
 .sidebar-img:hover {
-  
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
@@ -158,4 +142,48 @@ Add the following CSS rule at the bottom of the file:
   display: block;
   border-radius: 24px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  padding: 16px 24px;
+  background: #a0dafc;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ff4da6;
+}
+
+#nav-ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-li a:hover {
+  background: #56b7dd;
+  color: #ffc3f7;
 }
