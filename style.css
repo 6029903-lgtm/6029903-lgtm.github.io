@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background: #947706;
-  color: #222;
+  background: #f05eb8;
+  color: #e92681;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -14,4 +14,148 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 32px 40px;
+}
+#interests {
+  margin-top: 32px;
+  width: 100%;
+}
+
+#interests h3 {
+  margin: 0 0 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+#interests ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#interests li {
+  color: #faa4c5;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: #ff91f0;
+  border: 1px solid #ff3db5;
+  border-radius: 100px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+  cursor: default;
+}
+
+#interests li:hover {
+  background: #e9bfd0;
+  color: #fff;
+  border-color: #ee7dd5;
+  transform: translateY(-2px);
+}#interests h3 {
+  color: #dd1a3b;
+}
+
+#interests li {
+  background: #ffe8ec;
+  border-color: #ffa6b5;
+  color: #ff57a5;
+}
+
+#interests li:hover {
+  background: #e21235;
+  color: #f57deb;
+}h2 {
+  margin: 0;
+  font-size: clamp(4rem, 10vw, 7rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #f5add4;
+}
+
+.content > p {
+  margin: 0;
+  color: #fdc2ff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+}.sidebar-img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+ 
+  box-shadow: 0 8px 30px rgba(176, 219, 255, 0.993);
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sidebar-img:hover {
+ 
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}#interests {
+  margin-top: 32px;
+  width: 100%;
+}
+
+
+Paste the copied URL into the src attribute of your <img> tag, replacing CHANGE_ME.
+Example:
+<div class="sidebar">
+  <img class="sidebar-img" src="https://example.com/image.jpg" alt="My image">
+</div>
+
+
+✅ Check Your Work!
+Preview your site using Live Server.
+You should see your image, but it's probably way too big and overflows the sidebar. Don't worry — CSS will fix that next!
+Phase 2: Add the CSS (Black & White Filter)
+Let's tame that image and give it a curated, editorial look — like a photo in a magazine.
+
+🔍 Open your style.css file
+
+Add the following CSS rule at the bottom of the file:
+
+.sidebar-img {
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sidebar-img:hover {
+  
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+.sidebar-img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
