@@ -1,4 +1,4 @@
-0$(function () {
+$(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
@@ -32,23 +32,24 @@
 
     // TODO 2 - Create Platforms
 
-// createPlatform(500, 0, 20, 290)
-// createPlatform(1350, 400, 50, 50,"red");
-// createPlatform(1350, 400, 50, 50,"orange");
-// createPlatform(1350, 400, 50, 50,"yellow");
-// createPlatform(1350, 400, 50, 50,"green");
-// createPlatform(1350, 400, 50, 50,"blue");
-// createPlatform(1350, 400, 50, 50,"purple");
-// createPlatform(1350, 400, 50, 50,"pink");
-// createPlatform(1350, 400, 50, 50,"white");
+createPlatform(200, 625, 150, 20,"red");
+createPlatform(400, 500, 150, 20,"orange");
+createPlatform(600, 675, 150, 20,"yellow");
+createPlatform(600, 400, 150, 20,"green");
+createPlatform(1000, 500, 150, 20,"blue");
+createPlatform(800, 600, 150, 20,"purple");
+createPlatform(800, 400, 150, 20,"pink");
+createPlatform(700, 1000, 150, 20,"black");
     // TODO 3 - Create Collectables
-
-
+createCollectable("steve", 600, 655);
+createCollectable("diamond", 400, 480, 0.5, 0.7);
+createCollectable("diamond", 1000, 480, 0.5, 0.7);
 
     
     // TODO 4 - Create Cannons
-
-
+createCannon("top", 500, 500);
+createCannon("top", 800, 600);
+createCannon("top", 1100, 600);
     
     
     //////////////////////////////////
